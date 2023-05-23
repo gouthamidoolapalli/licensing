@@ -62,5 +62,4 @@ public class UserRequest {
 	
 	private boolean marketingCommunication;
 	
-
 }
