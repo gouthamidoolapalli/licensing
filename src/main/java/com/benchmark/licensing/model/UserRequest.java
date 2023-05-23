@@ -61,5 +61,6 @@ public class UserRequest {
 	private String educatorCount;
 	
 	private boolean marketingCommunication;
+	
 
 }
