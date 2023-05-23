@@ -2,15 +2,12 @@ package com.benchmark.licensing.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
-
 import com.benchmark.licensing.entity.UserForm;
 import com.benchmark.licensing.exception.InternalServerException;
-import com.benchmark.licensing.exception.MissingParamException;
 import com.benchmark.licensing.iservice.ILicensingService;
+import com.benchmark.licensing.model.UserRequest;
 import com.benchmark.licensing.repository.LicensingRepository;
 
 @Service
@@ -31,21 +28,36 @@ public class LicensingService implements ILicensingService{
 	}
 
 	@Override
-	public String updateUserInfo(UserForm userInfo) {
-		UserForm savedUser = null;
-		if(ObjectUtils.isEmpty(userInfo.getUserId()) || Integer.parseInt(userInfo.getUserId()) == 0) {
-			throw new MissingParamException("User Id");
-		}
-		if(ObjectUtils.isEmpty(userInfo.getFirstName())) {
-			throw new MissingParamException("First name");
-		}
-		if(ObjectUtils.isEmpty(userInfo.getLastName())) {
-			throw new MissingParamException("Last name");
-		}
+	public String updateUserInfo(UserRequest userInfo) {
+//		ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+//		Validator validator = factory.getValidator();
+//		Set<ConstraintViolation<UserRequest>> violations = validator.validate(userInfo);
+//		for (ConstraintViolation<UserRequest> violation : violations) {
+//		    throw new MissingParamException(violation.getMessage());
+//		}
 
+		UserForm savedUser = new UserForm();
 		try {
 
-			savedUser = licenseRepo.save(userInfo);
+			savedUser.setFirstName(userInfo.getFirstName());
+			savedUser.setLastName(userInfo.getLastName());
+			savedUser.setUserId(userInfo.getUserId());
+			savedUser.setEmail(userInfo.getEmail());
+			savedUser.setDistrictName(userInfo.getDistrictName());
+			savedUser.setRole(userInfo.getRole());
+			savedUser.setSchoolName(userInfo.getSchoolName());
+			savedUser.setSchoolContactNo(userInfo.getSchoolContactNo());
+			savedUser.setZipCode(userInfo.getZipCode());
+			savedUser.setCity(userInfo.getCity());
+			savedUser.setState(userInfo.getState());
+			savedUser.setAddress(userInfo.getAddress());
+			savedUser.setMarketingInfo(userInfo.getMarketingInfo());
+			savedUser.setFreeTrailStartDate(userInfo.getFreeTrailStartDate());
+			savedUser.setOrganisationType(userInfo.getOrganisationType());
+			savedUser.setEducatorCount(userInfo.getEducatorCount());
+			savedUser.setMarketingCommunication(userInfo.isMarketingCommunication());
+			
+			savedUser = licenseRepo.save(savedUser);
 		}catch(Exception e) {
 			throw new InternalServerException(e.getMessage());
 		}

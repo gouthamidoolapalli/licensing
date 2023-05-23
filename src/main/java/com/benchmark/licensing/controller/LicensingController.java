@@ -15,7 +15,10 @@ import com.benchmark.licensing.exception.LicensingExceptionHandler;
 import com.benchmark.licensing.exception.MissingParamException;
 import com.benchmark.licensing.iservice.ILicensingService;
 import com.benchmark.licensing.model.RestResponseVO;
+import com.benchmark.licensing.model.UserRequest;
 import com.benchmark.licensing.utils.Constants;
+
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/v1")
@@ -40,7 +43,7 @@ public class LicensingController {
 	}
 	
 	@RequestMapping(value = "/updateUser", method = RequestMethod.POST, produces = "application/json")
-	public ResponseEntity<Object> insertOrUpdateUser(@RequestBody UserForm userInfo) throws Exception{
+	public ResponseEntity<Object> insertOrUpdateUser(@RequestBody @Valid UserRequest userInfo) throws Exception{
 		RestResponseVO restResponseVO = new RestResponseVO();
 		ResponseEntity<Object> response = null;
 		try {
