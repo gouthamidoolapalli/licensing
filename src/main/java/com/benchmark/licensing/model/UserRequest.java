@@ -45,7 +45,7 @@ public class UserRequest {
 	private String state;
 	
 	@NotBlank
-	@Size(min=3, max = 20, message = "Adress must be in 50-100 range of charcters")
+	@Size(min=3, max = 20, message = "Adress must be in 3-20 range of charcters")
 	private String address;
 	
 	@NotBlank(message = "Marketing Info cannot be null")
