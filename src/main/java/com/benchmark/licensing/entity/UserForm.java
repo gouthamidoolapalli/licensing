@@ -17,7 +17,7 @@ public class UserForm{
 
 	@Id
 	@Column
-	private String userId;
+	private int userId;
 	
 	@Column
 	private String firstName;

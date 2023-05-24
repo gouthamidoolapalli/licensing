@@ -41,7 +41,7 @@ public class LicensingService implements ILicensingService{
 
 			savedUser.setFirstName(userInfo.getFirstName());
 			savedUser.setLastName(userInfo.getLastName());
-			savedUser.setUserId(userInfo.getUserId());
+			savedUser.setUserId(Integer.valueOf(userInfo.getUserId()));
 			savedUser.setEmail(userInfo.getEmail());
 			savedUser.setDistrictName(userInfo.getDistrictName());
 			savedUser.setRole(userInfo.getRole());
@@ -61,7 +61,7 @@ public class LicensingService implements ILicensingService{
 		}catch(Exception e) {
 			throw new InternalServerException(e.getMessage());
 		}
-		return savedUser.getUserId();
+		return String.valueOf(userInfo.getUserId());
 	}
 
 	@Override
