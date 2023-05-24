@@ -3,13 +3,13 @@ package com.benchmark.licensing.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.benchmark.licensing.entity.UserForm;
 import com.benchmark.licensing.exception.InternalServerException;
 import com.benchmark.licensing.exception.LicensingExceptionHandler;
 import com.benchmark.licensing.exception.MissingParamException;
@@ -26,7 +26,7 @@ public class LicensingController {
 	@Autowired
 	private ILicensingService licensingService;
 	
-	@RequestMapping(value = "/getLicensedUsers", method = RequestMethod.GET, produces = "application/json")
+	@GetMapping(value = "/getLicensedUsers", produces = "application/json")
 	public ResponseEntity<Object> getLicensingTerms() throws Exception{
 		RestResponseVO restResponseVO = new RestResponseVO();
 		ResponseEntity<Object> response = null;
@@ -42,7 +42,7 @@ public class LicensingController {
 		
 	}
 	
-	@RequestMapping(value = "/updateUser", method = RequestMethod.POST, produces = "application/json")
+	@PostMapping(value = "/updateUser", produces = "application/json")
 	public ResponseEntity<Object> insertOrUpdateUser(@RequestBody @Valid UserRequest userInfo) throws Exception{
 		RestResponseVO restResponseVO = new RestResponseVO();
 		ResponseEntity<Object> response = null;
@@ -59,7 +59,7 @@ public class LicensingController {
 		
 	}
 	
-	@RequestMapping(value = "/getLicensedUser/{id}", method = RequestMethod.GET, produces = "application/json")
+	@GetMapping(value = "/getLicensedUser/{id}", produces = "application/json")
 	public ResponseEntity<Object> getLicensedUserById(@PathVariable("id") String id) throws Exception{
 		RestResponseVO restResponseVO = new RestResponseVO();
 		ResponseEntity<Object> response = null;
