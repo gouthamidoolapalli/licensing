@@ -1,0 +1,77 @@
+2023-05-24 18:08:34,737 [INFO] com.benchmark.licensing.LicensingApplication [main] Starting LicensingApplication using Java 17.0.7 with PID 16328 (D:\MyRepository\licensing\target\classes started by Admin in D:\MyRepository\licensing)
+2023-05-24 18:08:34,739 [INFO] com.benchmark.licensing.LicensingApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 18:08:35,301 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24 18:08:35,340 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interfaces.
+2023-05-24 18:08:35,832 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-05-24 18:08:35,839 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-05-24 18:08:35,840 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24 18:08:35,957 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-05-24 18:08:35,958 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1187 ms
+2023-05-24 18:08:35,993 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-24 18:08:36,138 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-05-24 18:08:36,139 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-24 18:08:36,150 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-05-24 18:08:36,272 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24 18:08:36,317 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24 18:08:36,320 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-05-24 18:08:36,417 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-24 18:08:36,514 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24 18:08:36,546 [INFO] org.hibernate.orm.dialect [main] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-05-24 18:08:36,658 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-24 18:08:37,059 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24 18:08:37,076 [INFO] org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase [main] HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-05-24 18:08:37,079 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24 18:08:37,366 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24 18:08:37,902 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24 18:08:37,911 [INFO] com.benchmark.licensing.LicensingApplication [main] Started LicensingApplication in 3.457 seconds (process running for 3.705)
+2023-05-24 18:09:17,672 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 18:09:17,672 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-24 18:09:17,674 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-05-24 18:09:18,355 [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-8] Init duration for springdoc-openapi is: 295 ms
+2023-05-24 18:09:30,820 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-2] Processing getLicensedUsers request
+2023-05-24 18:09:31,017 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-2] getLicensedUsers request processed successfully
+2023-05-24 18:09:34,057 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-4] Processing getLicensedUsers request
+2023-05-24 18:09:34,059 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-4] getLicensedUsers request processed successfully
+2023-05-24 18:09:34,252 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-3] Processing getLicensedUsers request
+2023-05-24 18:09:34,254 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-3] getLicensedUsers request processed successfully
+2023-05-24 18:10:41,627 [INFO] com.benchmark.licensing.LicensingApplication [main] Starting LicensingApplication using Java 17.0.7 with PID 14008 (D:\MyRepository\licensing\target\classes started by Admin in D:\MyRepository\licensing)
+2023-05-24 18:10:41,629 [INFO] com.benchmark.licensing.LicensingApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-24 18:10:42,197 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-24 18:10:42,233 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interfaces.
+2023-05-24 18:10:42,695 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-05-24 18:10:42,703 [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2023-05-24 18:10:42,703 [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.8]
+2023-05-24 18:10:42,799 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+2023-05-24 18:10:42,800 [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1141 ms
+2023-05-24 18:10:42,828 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-24 18:10:42,937 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-05-24 18:10:42,939 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-24 18:10:42,948 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-05-24 18:10:43,063 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-24 18:10:43,106 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-24 18:10:43,108 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-05-24 18:10:43,218 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-24 18:10:43,319 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-24 18:10:43,346 [INFO] org.hibernate.orm.dialect [main] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-05-24 18:10:43,464 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-24 18:10:43,899 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-24 18:10:43,920 [INFO] org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase [main] HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-05-24 18:10:43,921 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-24 18:10:44,202 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-24 18:10:44,748 [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-05-24 18:10:44,757 [INFO] com.benchmark.licensing.LicensingApplication [main] Started LicensingApplication in 3.403 seconds (process running for 3.643)
+2023-05-24 18:10:52,939 [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-05-24 18:10:52,940 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-05-24 18:10:52,941 [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-05-24 18:10:52,962 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-1] Processing getLicensedUsers request
+2023-05-24 18:10:53,076 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-1] getLicensedUsers request processed successfully
+2023-05-24 18:10:53,574 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-2] Processing getLicensedUsers request
+2023-05-24 18:10:53,576 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-2] getLicensedUsers request processed successfully
+2023-05-24 18:10:53,750 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-3] Processing getLicensedUsers request
+2023-05-24 18:10:53,752 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-3] getLicensedUsers request processed successfully
+2023-05-24 18:10:53,926 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-5] Processing getLicensedUsers request
+2023-05-24 18:10:53,928 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-5] getLicensedUsers request processed successfully
+2023-05-24 18:10:55,395 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-4] Processing getLicensedUsers request
+2023-05-24 18:10:55,398 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-4] getLicensedUsers request processed successfully
+2023-05-24 18:10:56,793 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-6] Processing getLicensedUsers request
+2023-05-24 18:10:56,795 [INFO] com.benchmark.licensing.controller.LicensingController [http-nio-8080-exec-6] getLicensedUsers request processed successfully
