@@ -2,6 +2,7 @@ package com.benchmark.licensing.model;
 
 import com.benchmark.licensing.utils.annotations.ContactNumber;
 import com.benchmark.licensing.utils.annotations.FreeTrialDate;
+import com.benchmark.licensing.utils.annotations.OrganisationType;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -45,7 +46,7 @@ public class UserRequest {
 	private String state;
 	
 	@NotBlank
-	@Size(min=3, max = 20, message = "Adress must be in 3-20 range of charcters")
+	@Size(min=3, max = 20, message = "Adress must be in 50-100 range of charcters")
 	private String address;
 	
 	@NotBlank(message = "Marketing Info cannot be null")
@@ -54,12 +55,12 @@ public class UserRequest {
 	@FreeTrialDate
 	private String freeTrailStartDate;
 	
-	@NotBlank(message = "Organisation type cannot be null")
+	@OrganisationType
 	private String organisationType;
 	
 	@NotBlank(message = "educator count cannot be null")
 	private String educatorCount;
 	
 	private boolean marketingCommunication;
-	
+
 }

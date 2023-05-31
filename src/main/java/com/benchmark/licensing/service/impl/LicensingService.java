@@ -2,8 +2,12 @@ package com.benchmark.licensing.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import com.benchmark.licensing.entity.UserForm;
 import com.benchmark.licensing.exception.InternalServerException;
 import com.benchmark.licensing.iservice.ILicensingService;
@@ -12,6 +16,8 @@ import com.benchmark.licensing.repository.LicensingRepository;
 
 @Service
 public class LicensingService implements ILicensingService{
+	
+	Logger logger=LoggerFactory.getLogger(ILicensingService.class);
 
 	@Autowired
 	LicensingRepository licenseRepo;
@@ -22,6 +28,7 @@ public class LicensingService implements ILicensingService{
 		try {
 			totalUsers.addAll(licenseRepo.findAll());
 		}catch(Exception e) {
+			logger.error("InternalServerException occurred: {}", e.getMessage(), e);
 			throw new InternalServerException( e.getMessage());
 		}
 		return totalUsers;
@@ -41,7 +48,7 @@ public class LicensingService implements ILicensingService{
 
 			savedUser.setFirstName(userInfo.getFirstName());
 			savedUser.setLastName(userInfo.getLastName());
-			savedUser.setUserId(Integer.valueOf(userInfo.getUserId()));
+			savedUser.setUserId(userInfo.getUserId());
 			savedUser.setEmail(userInfo.getEmail());
 			savedUser.setDistrictName(userInfo.getDistrictName());
 			savedUser.setRole(userInfo.getRole());
@@ -59,9 +66,10 @@ public class LicensingService implements ILicensingService{
 			
 			savedUser = licenseRepo.save(savedUser);
 		}catch(Exception e) {
+			logger.error("InternalServerException occurred: {}", e.getMessage(), e);
 			throw new InternalServerException(e.getMessage());
 		}
-		return String.valueOf(userInfo.getUserId());
+		return savedUser.getUserId();
 	}
 
 	@Override
@@ -72,6 +80,7 @@ public class LicensingService implements ILicensingService{
 			int mId = Integer.parseInt(id);
 			user = licenseRepo.findById(mId).get();
 		}catch(Exception e) {
+			logger.error("InternalServerException occurred: {}", e.getMessage(), e);
 			throw new InternalServerException(e.getMessage());
 		}
 		return user;
