@@ -1,0 +1,53 @@
+2023-05-31 14:36:34,973 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] Starting LicensingApplicationTests using Java 17.0.7 with PID 17872 (started by Admin in D:\Licensing\licensing)
+2023-05-31 14:36:34,975 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-31 14:36:36,528 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31 14:36:36,602 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+2023-05-31 14:36:37,489 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-31 14:36:37,884 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-05-31 14:36:37,887 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-31 14:36:37,974 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31 14:36:38,064 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-31 14:36:38,068 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-05-31 14:36:38,263 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-31 14:36:38,275 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-31 14:36:38,321 [INFO] org.hibernate.orm.dialect [main] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-05-31 14:36:38,566 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-31 14:36:39,151 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31 14:36:39,190 [INFO] org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase [main] HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-05-31 14:36:39,192 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 14:36:40,094 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31 14:36:41,221 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-05-31 14:36:41,270 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] Started LicensingApplicationTests in 6.869 seconds (process running for 11.279)
+2023-05-31 14:36:42,297 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 14:36:42,372 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-31 14:36:42,517 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-31 14:36:42,538 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-05-31 14:41:14,167 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] Starting LicensingApplicationTests using Java 17.0.7 with PID 18484 (started by Admin in D:\Licensing\licensing)
+2023-05-31 14:41:14,168 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2023-05-31 14:41:15,045 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-05-31 14:41:15,103 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+2023-05-31 14:41:15,583 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2023-05-31 14:41:15,908 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-05-31 14:41:15,910 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-05-31 14:41:15,968 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-05-31 14:41:16,054 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.2.Final
+2023-05-31 14:41:16,057 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2023-05-31 14:41:16,257 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-31 14:41:16,269 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-05-31 14:41:16,310 [INFO] org.hibernate.orm.dialect [main] HHH035001: Using dialect: org.hibernate.dialect.H2Dialect, version: 2.1.214
+2023-05-31 14:41:16,557 [INFO] org.hibernate.bytecode.internal.BytecodeProviderInitiator [main] HHH000021: Bytecode provider name : bytebuddy
+2023-05-31 14:41:17,114 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-05-31 14:41:17,150 [INFO] org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase [main] HHH000476: Executing script '[injected ScriptSourceInputNonExistentImpl script]'
+2023-05-31 14:41:17,153 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 14:41:17,594 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-05-31 14:41:18,185 [INFO] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration [main] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-05-31 14:41:18,218 [INFO] com.benchmark.licensing.LicensingApplicationTests [main] Started LicensingApplicationTests in 4.383 seconds (process running for 6.898)
+2023-05-31 14:41:18,395 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-05-31 14:41:18,514 [INFO] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl [SpringApplicationShutdownHook] HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-05-31 14:41:18,518 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [SpringApplicationShutdownHook] SQL Error: 90121, SQLState: 90121
+2023-05-31 14:41:18,518 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [SpringApplicationShutdownHook] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-31 14:41:18,519 [WARN] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [SpringApplicationShutdownHook] SQL Error: 90121, SQLState: 90121
+2023-05-31 14:41:18,519 [ERROR] org.hibernate.engine.jdbc.spi.SqlExceptionHelper [SpringApplicationShutdownHook] Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-05-31 14:41:18,520 [WARN] org.springframework.beans.factory.support.DisposableBeanAdapter [SpringApplicationShutdownHook] Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution [Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]] [n/a]
+2023-05-31 14:41:18,520 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-05-31 14:41:18,522 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
